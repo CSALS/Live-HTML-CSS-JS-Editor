@@ -130,21 +130,21 @@ function maximizeIFrame() {
 }
 function minimizeIframe() {
     //Going in reverse order from maximizeFrame() to reset all elements to their original dimensions
-    var editors = document.getElementById("editors");
+    let editors = document.getElementById("editors");
     editors.style.height = "50%";
     editors.style.width = "100%";
-    var editors = document.getElementById("htmlEditor");
-    editors.style.height = "90%";
-    editors.style.width = "32%";
-    editors = document.getElementById("cssEditor");
-    editors.style.height = "90%";
-    editors.style.width = "32%";
-    editors = document.getElementById("jsEditor");
-    editors.style.height = "90%";
-    editors.style.width = "32%";
-    var el = document.getElementById("iframe");
-    el.style.height = "50%";
-    el.style.width = "100%";
+    let htmlEditor = document.getElementById("htmlEditor");
+    htmlEditor.style.height = "90%";
+    htmlEditor.style.width = "32%";
+    let cssEditor = document.getElementById("cssEditor");
+    cssEditor.style.height = "90%";
+    cssEditor.style.width = "32%";
+    let jsEditor = document.getElementById("jsEditor");
+    jsEditor.style.height = "90%";
+    jsEditor.style.width = "32%";
+    var iframe = document.getElementById("iframe");
+    iframe.style.height = "50%";
+    iframe.style.width = "100%";
 }
 
 //Download Code File
