@@ -2,8 +2,10 @@
 
 ![image](https://i.imgur.com/afbBsjS.png)
 
+  - https://live-hcjs-editor.herokuapp.com
   - This is a code editor where you can write HTML, CSS, JS code and see the output there itself.
   - You can also download the source code.
+  - Hosted on heroku.
   - Similar to codepen, jsfiddle
 
 ## To be implemented :-
@@ -18,4 +20,9 @@
 
 ### References :-
 - https://tryenlight.github.io/code-editor.html
+
+  ##### Used for hosting on heroku :-
+- https://blog.teamtreehouse.com/deploy-static-site-heroku 
+- https://medium.com/@winnieliang/how-to-run-a-simple-html-css-javascript-application-on-heroku-4e664c541b0b
+
 
