@@ -84,6 +84,11 @@ html,body {
     left:0%;
 }
 
+.downloadCode {
+    position:absolute;
+    left:0%;
+}
+
 .maxButton {
     position:absolute;
     right:0%;

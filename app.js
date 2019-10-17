@@ -1,5 +1,5 @@
 function getUserCode() {
-    return htmlEditor.getValue() + "<style>" + cssEditor.getValue() + "</style>" + "<script>" + jsEditor.getValue() + "</script>";
+    return htmlEditor.getValue() + "\n" + "<style>" + "\n" + cssEditor.getValue() + "\n" + "</style>" + "\n" +  "<script>" + "\n" + jsEditor.getValue() + "\n" + "</script>";
 }
 function update() {
     //this is the content of iframe
@@ -145,4 +145,28 @@ function minimizeIframe() {
     var el = document.getElementById("iframe");
     el.style.height = "50%";
     el.style.width = "100%";
+}
+
+//Download Code File
+function downloadCode() {
+     //1.Create a blob
+     const userCode = getUserCode();
+     const blob = new Blob([userCode], {type: "text/html"});
+     downloadFile(blob,"index.html");
+}
+//2.function that accepts blob and file name
+function downloadFile(blob,fileName) {
+    //3.create url for blob
+    const url = window.URL.createObjectURL(blob);
+    //4.anchor tag to download
+    const a = document.createElement('a');
+    //Before click we need to add some properties to our anchorTag
+    a.href = url;
+    a.download = fileName;
+    //click event
+    a.click();
+    //remove anchor tag
+    a.remove();
+
+    document.addEventListener("focus",w=>{window.URL.revokeObjectURL(url)})
 }
