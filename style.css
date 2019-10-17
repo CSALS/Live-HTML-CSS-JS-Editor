@@ -1,38 +1,90 @@
-body {
-    text-align: center;
+html,body {
+    margin: 0;
+    padding: 0;
+    height:100%;
+    width:100%;
+    overflow:hidden;
+    overflow-x: hidden;
 }
-
-textarea {
-    resize: none;
-    width: 32%;
-    float: top;
-    min-height: 250px;
-    overflow: scroll;
-    margin: auto;
-    display: inline-block;
-    outline: none;
-    font-family: Courier, sans-serif;
-    font-size: 14px;
+/* Hides the scrollbar while still able to scroll */
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
-
-iframe {
-    background:rgb(247, 247, 247);
-    bottom: 0;
+#container {
+    height:100%;
+    width:auto;
+    white-space:nowrap;
+    overflow:hidden;
+}
+#iframe {
+    border:1px solid black;
+    background:rgb(247, 254, 255);
+    height:50%;
+    /* display:inline-block;  */
+    width:100%;
+    /* what is inline */  
+}
+#editors {
+    border:2px solid black;
     position: relative;
-    width: 100%;
-    height: 35em;
+    background-color:#21222C;
+    height:50%;
+    width:100%;
+    /* what is inline */
+    /* display:inline-block;  */
 }
-
-::placeholder {
-    color:#DAE0E2;
+.editor {
+    border:1.5px solid black;
+    position: absolute;
+    /* background: blue; */
+    top:8%;
+    height:90%;
+    width:32%;
+}
+#htmlEditor {  
+    left:1%;  
+}
+#cssEditor {
+    left:34%;
+}
+#jsEditor {
+    right:1%;
+}
+#labels {
+    position: absolute;
+    top:0%;
+    height:8%;
+    width:32%;
     text-align: center;
-    opacity: 1; /* Firefox */
+}
+.htmlLabel {
+    left:1%;  
+}
+.cssLabel {
+    left:34%;
+}
+.jsLabel {
+    right:1%;
+}
+#text {
+    color:white;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #DAE0E2;
+.button {
+    background-color: DodgerBlue;
+    border: none;
+    padding: 2px 6px;
+    cursor: pointer;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
-    color: #DAE0E2;
+.minButton {
+    position:absolute;
+    left:0%;
+}
+
+.maxButton {
+    position:absolute;
+    right:0%;
 }

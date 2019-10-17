@@ -1,20 +1,40 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 
 <html>
     <head>
-        <title>HTML/CSS/JS Editor</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Live HTML/CSS/JS Editor</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.6/ace.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
-    <body>
-        <textarea id="html" placeholder="HTML"></textarea>
-        <textarea id="css" placeholder="CSS"></textarea>
-        <textarea id="js" placeholder="JAVASCRIPT"></textarea>
-        <!-- Iframe displays a webpage inside another webpage -->
-        <iframe id="code"></iframe>
-        <!-- The following commands enables app.js script to run when we load index.html in our browser -->
-        <script type="text/javascript" src="app.js"></script>
+    <body onload='ready()'>
+        <div id='container'>
+            <div id='editors'>
+                <div class = 'fa fa-html5 htmlLabel' style="font-size:23px;color:red" id = 'labels'>
+                    <button type="button" class="button minButton" onclick="minimizeIframe()"><i class='fa fa-window-minimize'></i></button>
+                    <span id='text'>HTML</span>
+                </div>
+                <div class = 'fa fa-css3 cssLabel' style="font-size:23px;color:red" id='labels'>
+                    <span id='text'>CSS</span>
+                </div>
+                <div class = 'fa fa-jsfiddle jsLabel' style="font-size:23px;color:red" id='labels'>
+                    <span id='text'>Javascript</span>
+                    <button type="button" class="button maxButton" onclick="maximizeIFrame()"><i class='fa fa-window-maximize'></i></button>
+                </div>
 
+                <div class='editor' id='htmlEditor'></div>
+                <div class='editor' id='cssEditor'></div>
+                <div class='editor' id='jsEditor'></div>
+            </div>
+    
+            <iframe id='iframe' frameBorder="0">
+            </iframe>
+        </div>
+    
+        <script type="text/javascript" src="app.js"></script>
     </body>
 
 </html>
+
+
