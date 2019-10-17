@@ -18,6 +18,7 @@
   - Add mouseover text for minimize and maximize buttons.
   - Add download feature to download all the three files in one zip file.
   - Maybe try to add local environment where users can add pictures and refer to them in html files as if the images are in the same location as the source code.
+  - Add responsiveness to the website.
 
 
 
