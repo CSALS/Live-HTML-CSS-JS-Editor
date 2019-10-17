@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+    width: 32%;
+    float: top;
+    min-height: 250px;
+    overflow: scroll;
+    margin: auto;
+    display: inline-block;
+    outline: none;
+    font-family: Courier, sans-serif;
+    font-size: 14px;
+}
+
+iframe {
+    background:rgb(247, 247, 247);
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    height: 35em;
+}
+
+::placeholder {
+    color:#DAE0E2;
+    text-align: center;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #DAE0E2;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #DAE0E2;
+}
