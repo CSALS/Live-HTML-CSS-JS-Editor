@@ -6,7 +6,10 @@
   - This is a code editor where you can write HTML, CSS, JS code and see the output there itself.
   - You can also download the source code.
   - Hosted on heroku.
-  - Similar to codepen, jsfiddle
+  - Similar to codepen, jsfiddle.
+ 
+## Source Code :-
+ - *index.php , composer.json* are used to host the website on heroku.
 
 ## To be implemented :-
 
