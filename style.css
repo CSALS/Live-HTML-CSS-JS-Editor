@@ -43,13 +43,16 @@ html,body {
     width:32%;
 }
 #htmlEditor {  
-    left:1%;  
+    left:2%;  
 }
 #cssEditor {
     left:34%;
+    /* cursor: col-resize; */
 }
 #jsEditor {
-    right:1%;
+    right:2%;
+    /* left: 65%; */
+    /* cursor: col-resize; */
 }
 #labels {
     position: absolute;

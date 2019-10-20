@@ -43,6 +43,8 @@ function loadCSSEditor() {
     defaultCSSValue = "/*        Your CSS Code Goes Here           */"
     //tells ace editor to use editor element , window.editor makes it global in the javascript file
     window.cssEditor = ace.edit("cssEditor");
+    cssEditor.resize();
+    cssEditor.renderer.updateFull();
     //mode mode
     cssEditor.setTheme("ace/theme/dracula");
     //html mode
