@@ -13,7 +13,7 @@
 
 ## To be implemented :-
 
-  - Add resizable of the ace editors (https://ourcodeworld.com/articles/read/994/how-to-make-an-ace-editor-instance-resizable-by-the-user-dinamically-with-a-drag-and-drop-bar)
+  - Add resizable of the ace editors (https://ourcodeworld.com/articles/read/994/how-to-make-an-ace-editor-instance-resizable-by-the-user-dinamically-with-a-drag-and-drop-bar), (http://jsfiddle.net/U5JtP/199/)
   - Add different themes support for the three editors using drop down menu.
   - Add clear button for each of three editors and also "clear all" button. (use destroy() function https://ace.c9.io/#nav=api&api=editor)
   - Add mouseover text for minimize and maximize buttons.
