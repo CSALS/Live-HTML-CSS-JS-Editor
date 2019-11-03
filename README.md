@@ -2,7 +2,7 @@
 
 ![image](https://i.imgur.com/afbBsjS.png)
 
-  - https://live-hcjs-editor.herokuapp.com
+  - https://live-editor.onrender.com
   - This is a code editor where you can write HTML, CSS, JS code and see the output there itself.
   - You can also download the source code.
   - Hosted on heroku.
